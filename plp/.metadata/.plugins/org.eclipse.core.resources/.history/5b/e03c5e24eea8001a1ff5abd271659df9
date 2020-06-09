@@ -1,0 +1,48 @@
+package com.capgemini.capstore.stepdefination;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+
+public class LoginStepDefination {
+
+	static {
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+
+	}
+	WebDriver driver;
+	@Given("^the customer has loaded the application in the browser$")
+	public void the_customer_has_loaded_the_application_in_the_browser() throws Throwable {
+		driver = new ChromeDriver();
+		driver.get("http://localhost:4200");
+		driver.manage().window().maximize();
+	}
+
+	@When("^the customer clicks  on the login Button navbar$")
+	public void the_customer_clicks_on_the_login_Button_navbar() throws Throwable {
+	    driver.findElement(By.name("login")).click();
+	}
+
+	@When("^the customer enters email in textbox$")
+	public void the_customer_enters_email_in_textbox() throws Throwable {
+		driver.findElement(By.name("email")).sendKeys("s@gmail.com");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+
+	@When("^the customer enters the password in the textbox$")
+	public void the_customer_enters_the_password_in_the_textbox() throws Throwable {
+	   
+	}
+
+	@When("^the customer clicks on the login button$")
+	public void the_customer_clicks_on_the_login_button() throws Throwable {
+	    
+	}
+
+
+}

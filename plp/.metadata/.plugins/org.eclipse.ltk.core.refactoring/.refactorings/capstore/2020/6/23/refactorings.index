@@ -1,0 +1,11 @@
+1591260380671	Rename package 'com.capgemini.capstore.configration'
+1591261379278	Delete element
+1591262237590	Rename type 'CapstoreService'
+1591262321713	Rename type 'CapstoreSeviceImpl'
+1591331457386	Rename package 'com.capgemini.capstore.beans'
+1591332439895	Rename type 'CapstoreConfig'
+1591332564911	Delete element
+1591332610391	Delete element
+1591332631819	Rename type 'CustomerBean'
+1591332668373	Delete element
+1591332687066	Rename type 'MerchantBean'

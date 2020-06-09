@@ -1,0 +1,34 @@
+package com.capgemini.capstore.stepdefination;
+
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.java.en.When;
+
+public class ChangePasswordStepDefination {
+	static {
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+
+	}
+	WebDriver driver;
+
+	@When("^the customer clicks  on the Change Password Button navbar$")
+	public void the_customer_clicks_on_the_Change_Password_Button_navbar() throws Throwable {
+	   
+	}
+
+	@When("^the customer enters old Paasword in textbox$")
+	public void the_customer_enters_old_Paasword_in_textbox() throws Throwable {
+	    
+	}
+
+	@When("^the customer enters the  new password in the textbox$")
+	public void the_customer_enters_the_new_password_in_the_textbox() throws Throwable {
+	   
+	}
+
+	@When("^the customer clicks on the Submit button$")
+	public void the_customer_clicks_on_the_Submit_button() throws Throwable {
+	   
+	}
+
+}

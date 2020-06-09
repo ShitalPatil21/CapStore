@@ -1,0 +1,8 @@
+Feature: Testing the User Feature
+@Module3
+Scenario: login Feature
+Given the customer has loaded the application in the browser
+When the customer clicks  on the login Button navbar 
+When the customer enters email in textbox
+And the customer enters the password in the textbox
+And the customer clicks on the login button

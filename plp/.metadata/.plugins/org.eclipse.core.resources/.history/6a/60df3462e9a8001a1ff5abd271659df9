@@ -1,0 +1,56 @@
+package com.capgemini.capstore.stepdefination;
+
+import org.openqa.selenium.WebDriver;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class MerchantStepDefination {
+
+	static {
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+
+	}
+	WebDriver driver;
+	@Given("^the Merchant loaded application in the browser$")
+	public void the_Merchant_loaded_application_in_the_browser() throws Throwable {
+	    
+	}
+
+	@When("^the Merchant clicks  on the Register Link  on navbar$")
+	public void the_Merchant_clicks_on_the_Register_Link_on_navbar() throws Throwable {
+	    
+	}
+
+	@When("^the Merchant clicks on Merchant Link$")
+	public void the_Merchant_clicks_on_Merchant_Link() throws Throwable {
+	   
+	}
+
+	@When("^the Merchant enters username in the textbox$")
+	public void the_Merchant_enters_username_in_the_textbox() throws Throwable {
+	    
+	}
+
+	@When("^the Merchant enter email in textbox$")
+	public void the_Merchant_enter_email_in_textbox() throws Throwable {
+	   
+	}
+
+	@When("^the Merchant enter the password in the textbox$")
+	public void the_Merchant_enter_the_password_in_the_textbox() throws Throwable {
+	   
+	}
+
+	@When("^the Merchant enters mobile no in the textbox$")
+	public void the_Merchant_enters_mobile_no_in_the_textbox() throws Throwable {
+	    
+	}
+
+	@Then("^the Merchant clicks on submit button$")
+	public void the_Merchant_clicks_on_submit_button() throws Throwable {
+	   
+	}
+
+
+}

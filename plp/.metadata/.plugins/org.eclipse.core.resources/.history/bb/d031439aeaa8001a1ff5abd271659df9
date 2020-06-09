@@ -1,0 +1,13 @@
+Feature: Testing the Merchant Registration Feature
+
+@Module2
+Scenario: Testing the Merchant Registration feature with valid data
+Given the Merchant loaded application in the browser
+When the Merchant clicks  on the Register Link  on navbar 
+And the Merchant clicks on Merchant Link
+And the Merchant enters username in the textbox
+And the Merchant enter email in textbox
+And the Merchant enter the password in the textbox
+And the Merchant enters mobile no in the textbox
+Then the Merchant clicks on submit button
+

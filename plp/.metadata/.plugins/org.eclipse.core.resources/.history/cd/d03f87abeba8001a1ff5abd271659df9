@@ -1,0 +1,79 @@
+package com.capgemini.capstore.stepdefination;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class MerchantStepDefination {
+
+	static {
+		System.setProperty("webdriver.chrome.driver", "./Driver/chromedriver.exe");
+
+	}
+	WebDriver driver;
+	@Given("^the Merchant loaded application in the browser$")
+	public void the_Merchant_loaded_application_in_the_browser() throws Throwable {
+		driver = new ChromeDriver();
+		driver.get("http://localhost:4200");
+		driver.manage().window().maximize();
+	}
+
+	@When("^the Merchant clicks  on the Register Link  on navbar$")
+	public void the_Merchant_clicks_on_the_Register_Link_on_navbar() throws Throwable {
+		driver.findElement(By.xpath("//*[@id=\"dropdownMenuButton\"]")).click();
+	}
+
+	@When("^the Merchant clicks on Merchant Link$")
+	public void the_Merchant_clicks_on_Merchant_Link() throws Throwable {
+	   driver.findElement(By.xpath("//*[@id=\"collapsibleNavId\"]/ul[2]/div/div/a[2]")).click();
+	}
+
+	@When("^the Merchant enters username in the textbox$")
+	public void the_Merchant_enters_username_in_the_textbox() throws Throwable {
+		driver.findElement(By.name("name")).sendKeys("Shital Patil");
+	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+
+	@When("^the Merchant enter email in textbox$")
+	public void the_Merchant_enter_email_in_textbox() throws Throwable {
+		driver.findElement(By.name("email")).sendKeys("a@gmail.com");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+
+	@When("^the Merchant enter the password in the textbox$")
+	public void the_Merchant_enter_the_password_in_the_textbox() throws Throwable {
+		driver.findElement(By.name("password")).sendKeys("Mayu@123");
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+
+	@When("^the Merchant enters mobile no in the textbox$")
+	public void the_Merchant_enters_mobile_no_in_the_textbox() throws Throwable {
+		driver.findElement(By.name("phoneNumber")).sendKeys("9087121234");
+	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+
+	@When("^the Merchant enters his brand name in the textbox$")
+	public void the_Merchant_enters_his_brand_name_in_the_textbox() throws Throwable {
+		driver.findElement(By.name("brandName")).sendKeys("HP");
+	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+
+	@When("^the Merchant enters address in the textbox$")
+	public void the_Merchant_enters_address_in_the_textbox() throws Throwable {
+		driver.findElement(By.name("address")).sendKeys("A/p-nerele");
+	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	}
+
+	@Then("^the Merchant clicks on submit button$")
+	public void the_Merchant_clicks_on_submit_button() throws Throwable {
+		driver.findElement(By.xpath("//*[@id=\"collapsibleNavId\"]/ul[2]/div/div/a[2]")).click();
+	}
+
+
+}

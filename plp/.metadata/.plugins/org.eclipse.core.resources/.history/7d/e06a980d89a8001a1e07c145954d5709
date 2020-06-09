@@ -1,0 +1,5 @@
+ackage com.capgemini.hotelmanagement.controller;
+
+public class AdminController {
+
+}

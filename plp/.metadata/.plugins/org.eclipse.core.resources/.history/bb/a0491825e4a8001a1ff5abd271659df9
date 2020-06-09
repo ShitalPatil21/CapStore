@@ -1,0 +1,12 @@
+Feature: Testing the Customer Registration Feature
+
+@Module1
+Scenario: Testing the Customer Registration feature with valid data
+Given the Customer loaded application in the browser
+When the Customer clicks  on the Register Link  on navbar 
+And the Customer enters username in the textbox
+And the Customer enter email in textbox
+And the Customer enter the password in the textbox
+And the Customer enters mobile no in the textbox
+Then the Customer clicks on submit button
+

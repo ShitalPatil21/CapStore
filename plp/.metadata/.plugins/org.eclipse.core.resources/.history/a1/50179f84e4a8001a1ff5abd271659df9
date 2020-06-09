@@ -1,0 +1,50 @@
+package com.capgemini.capstore.stepdefination;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class CustomerStepDefination {
+
+	@Given("^the Customer loaded application in the browser$")
+	public void the_Customer_loaded_application_in_the_browser() throws Throwable {
+	   
+	}
+
+	@When("^the Customer clicks  on the Register Link  on navbar$")
+	public void the_Customer_clicks_on_the_Register_Link_on_navbar() throws Throwable {
+	   
+	}
+
+	@When("^the Customer clicks on Customer Link$")
+	public void the_Customer_clicks_on_Customer_Link() throws Throwable {
+	   
+	}
+
+	@When("^the Customer enters username in the textbox$")
+	public void the_Customer_enters_username_in_the_textbox() throws Throwable {
+	    
+	}
+
+	@When("^the Customer enter email in textbox$")
+	public void the_Customer_enter_email_in_textbox() throws Throwable {
+	   
+	}
+
+	@When("^the Customer enter the password in the textbox$")
+	public void the_Customer_enter_the_password_in_the_textbox() throws Throwable {
+	   
+	}
+
+	@When("^the Customer enters mobile no in the textbox$")
+	public void the_Customer_enters_mobile_no_in_the_textbox() throws Throwable {
+	    
+	}
+
+	@Then("^the Customer clicks on submit button$")
+	public void the_Customer_clicks_on_submit_button() throws Throwable {
+	    
+	}
+
+
+}

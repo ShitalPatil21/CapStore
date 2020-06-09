@@ -1,0 +1,21 @@
+package com.capgemini.capstore.runner;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="Feature",glue= {"com.capgemini.capstore"},tags={"@Module1"})
+public class Runner {
+    //tags= {"@Module2"}
+	//dryRun=true
+	//tags= {"@Module3"} tags= {"@Module8"}
+	//tags= {"@Module5"} tags={"@Module8"}
+	//tags={"@Module6"}  tags={"@Module9"}
+	//tags= {"@Module2"}
+	//tags= {"@Module4"}
+	//tags= {"@Module5"}
+	//tags= {"@Module6"}
+	//tags= {"@Module7"}
+}
