@@ -1,0 +1,18 @@
+
+input.ng-touched.ng-invalid
+{
+    border:1px solid red;
+
+}
+input.ng-touched.ng-valid
+{
+    border:1px solid green;
+
+}
+.a1{
+    background-color:  #f0f8ff;
+
+}
+.card1{
+    color: #b3dbff;
+}
